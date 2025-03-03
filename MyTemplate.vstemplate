@@ -1,0 +1,84 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Garrafeira_1</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Garrafeira_1</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Garrafeira_1.csproj" File="Garrafeira_1.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <Folder Name="conexaoDB" TargetFolderName="conexaoDB">
+        <ProjectItem ReplaceParameters="false" TargetFileName="conexao.dbml">conexao.dbml</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="conexao.dbml.layout">conexao.dbml.layout</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="conexao.designer.cs">conexao.designer.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DataContextFactory.cs">DataContextFactory.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LOGINS_GARRAFEIRADataSet.xsd">LOGINS_GARRAFEIRADataSet.xsd</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LOGINS_GARRAFEIRADataSet.Designer.cs">LOGINS_GARRAFEIRADataSet.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="LOGINS_GARRAFEIRADataSet.xsc">LOGINS_GARRAFEIRADataSet.xsc</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="LOGINS_GARRAFEIRADataSet.xss">LOGINS_GARRAFEIRADataSet.xss</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LOGINS_GARRAFEIRADataSet1.xsd">LOGINS_GARRAFEIRADataSet1.xsd</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LOGINS_GARRAFEIRADataSet1.Designer.cs">LOGINS_GARRAFEIRADataSet1.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="LOGINS_GARRAFEIRADataSet1.xsc">LOGINS_GARRAFEIRADataSet1.xsc</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="LOGINS_GARRAFEIRADataSet1.xss">LOGINS_GARRAFEIRADataSet1.xss</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <Folder Name="DataSources" TargetFolderName="DataSources">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Garrafeira_1.conexaoDB.Categoria.datasource">Garrafeira_1.conexaoDB.Categoria.datasource</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="TELA DE LOGIN" TargetFolderName="TELA DE LOGIN">
+        <ProjectItem ReplaceParameters="true" TargetFileName="tela_de_login.cs">tela_de_login.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="tela_de_login.Designer.cs">tela_de_login.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="tela_de_login.resx">tela_de_login.resx</ProjectItem>
+      </Folder>
+      <Folder Name="TELAS DO MEN ADM" TargetFolderName="TELAS DO MEN ADM">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Cadastrar_produtos_ADM.cs">Cadastrar_produtos_ADM.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Cadastrar_produtos_ADM.Designer.cs">Cadastrar_produtos_ADM.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Cadastrar_produtos_ADM.resx">Cadastrar_produtos_ADM.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Gerenciar_Categorias.cs">Gerenciar_Categorias.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Gerenciar_Categorias.aa-DJ.resx">Gerenciar_Categorias.aa-DJ.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Gerenciar_Categorias.Designer.cs">Gerenciar_Categorias.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Gerenciar_Categorias.resx">Gerenciar_Categorias.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Gerenciar_Usuarios.cs">Gerenciar_Usuarios.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Gerenciar_Usuarios.Designer.cs">Gerenciar_Usuarios.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Gerenciar_Usuarios.resx">Gerenciar_Usuarios.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Passagem_ADM.cs">Passagem_ADM.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Passagem_ADM.Designer.cs">Passagem_ADM.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Passagem_ADM.resx">Passagem_ADM.resx</ProjectItem>
+      </Folder>
+      <Folder Name="TELAS DO MEN ATD" TargetFolderName="TELAS DO MEN ATD">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Tela_ConsultarEstoque.cs">Tela_ConsultarEstoque.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Tela_ConsultarEstoque.Designer.cs">Tela_ConsultarEstoque.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Tela_HistoricodeVenda.cs">Tela_HistoricodeVenda.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Tela_HistoricodeVenda.Designer.cs">Tela_HistoricodeVenda.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Tela_Recibo.cs">Tela_Recibo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Tela_Recibo.Designer.cs">Tela_Recibo.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Tela_RegistrarVenda.cs">Tela_RegistrarVenda.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Tela_RegistrarVenda.Designer.cs">Tela_RegistrarVenda.Designer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="TELAS_PRINCIPAIS" TargetFolderName="TELAS_PRINCIPAIS">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Menu_Adm.cs">Menu_Adm.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Menu_Adm.Designer.cs">Menu_Adm.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Menu_Adm.resx">Menu_Adm.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Menu_atendente.cs">Menu_atendente.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Menu_atendente.Designer.cs">Menu_atendente.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Menu_atendente.resx">Menu_atendente.resx</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="conexao">
+  <DataContextMoniker Name="/conexaoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a23892ab-e9d0-4284-a6d9-3376114e85e8" absoluteBounds="3.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/conexaoDataContext/Produto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7d5f812-62f3-42cc-b08a-ac8e6b59530b" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8346f0a-867a-41f5-8e30-5f67168a9fac" absoluteBounds="0.75, 1.125, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/conexaoDataContext/Categoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bbe3bb94-7ffc-4880-ae4a-840969820eec" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/conexaoDataContext/Categoria/TBL_Categoria_TBL_Produto" />
+      <nodes>
+        <classShapeMoniker Id="b8346f0a-867a-41f5-8e30-5f67168a9fac" />
+        <classShapeMoniker Id="a23892ab-e9d0-4284-a6d9-3376114e85e8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
