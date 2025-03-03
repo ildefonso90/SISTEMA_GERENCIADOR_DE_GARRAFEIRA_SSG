@@ -1,89 +1,102 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garrafeira - Sistema de Gestão</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #1e1e1e;
-            color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            background: #2b2b2b;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-        }
-        h1, h2, h3 {
-            color: #ffcc00;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .btn {
-            display: inline-block;
-            background: #ffcc00;
-            color: #1e1e1e;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #ffaa00;
-        }
-        .code {
-            background: #333;
-            padding: 10px;
-            border-radius: 5px;
-            font-family: 'Courier New', Courier, monospace;
-            overflow-x: auto;
-        }
-    </style>
-</head>
-<body>
+Documentação do Sistema de Gerenciamento de Garrafeira
+1. Introdução
+O sistema de gerenciamento de garrafeira foi desenvolvido para otimizar o controle de estoque e vendas de bebidas. Ele permite a administração eficiente dos produtos, categorias, clientes, fornecedores e usuários do sistema, garantindo um fluxo de trabalho organizado e seguro.
 
-<div class="container">
-    <h1>🍷 Garrafeira - Sistema de Gestão</h1>
-    <p>O <b>Garrafeira</b> é um sistema de gerenciamento de bebidas que facilita o controle de estoque, vendas e clientes.</p>
+2. Objetivo
+O principal objetivo do sistema é oferecer um ambiente de gestão simplificado e eficaz para estabelecimentos que comercializam bebidas, permitindo:
+Controle de estoque detalhado, evitando desperdícios ou falta de produtos.
+Registro de vendas, com emissão de recibos e acompanhamento do histórico de transações.
+Gerenciamento de usuários, diferenciando permissões entre administradores e atendentes.
+Organização de produtos e categorias, tornando as buscas mais rápidas e precisas.
+---
 
-    <div class="section">
-        <h2>📌 Funcionalidades</h2>
-        <ul>
-            <li>🔑 Login seguro (Administrador e Atendente)</li>
-            <li>📦 Controle de estoque completo</li>
-            <li>🛒 Registro e histórico de vendas</li>
-            <li>👥 Gerenciamento de clientes e fornecedores</li>
-            <li>📊 Relatórios detalhados</li>
-        </ul>
-    </div>
+3. Estrutura do Projeto
+O sistema está estruturado da seguinte forma:
+3.1. Arquivos e Diretórios
+-----
 
-    <div class="section">
-        <h2>🚀 Como Executar</h2>
-        <p>Para rodar o projeto, siga estes passos:</p>
-        <div class="code">
-            1. Clone o repositório: <br>
-            <code>git clone https://github.com/seuusuario/garrafeira.git</code> <br><br>
-            2. Abra no Visual Studio e compile. <br>
-            3. Configure o banco de dados se necessário. <br>
-            4. Execute o projeto e comece a usar! 🚀
-        </div>
-    </div>
+3.2. Banco de Dados
+O sistema utiliza LINQ to SQL para gerenciar o banco de dados. O modelo de dados é definido nos arquivos:
+conexaoDB/conexao.dbml → Mapeia as tabelas do banco de dados.
+conexaoDB/conexao.designer.cs → Código gerado automaticamente para manipulação dos dados.
+Principais tabelas do banco de dados:
+| Tabela | Descrição | |--------|-----------| | Usuarios | Contém informações de login e permissões. | | Produtos | Armazena os dados das bebidas, incluindo preço, volume e tipo. | | Categorias | Classifica os produtos para facilitar a organização. | | Vendas | Registra todas as transações realizadas no sistema. | | Fornecedores | Guarda informações sobre os fornecedores das bebidas. | | Clientes | Lista os clientes cadastrados no sistema. |
+---
 
-    <div class="section">
-        <h2>📜 Licença</h2>
-        <p>Este projeto está sob a licença <b>MIT</b>. Você pode usar e modificar livremente.</p>
-    </div>
+4. Funcionalidades
+----
 
-    <a href="https://github.com/seuusuario/garrafeira" class="btn">🔗 Acesse o Repositório</a>
-</div>
+4.1. Autenticação de Usuários
+O sistema exige que o usuário faça login para acessar as funcionalidades. Há dois tipos de usuários:
+Administrador: Gerencia produtos, categorias, vendas e usuários.
+Atendente: Pode registrar vendas e consultar estoque.
+4.2. Cadastro e Gerenciamento
+----
 
-</body>
-</html>
+4.2.1. Produtos
+----
+
+Os produtos podem ser adicionados, editados e removidos pelo administrador. Cada produto inclui:
+Nome
+Tipo (ex: vinho, cerveja, whisky)
+Volume
+Preço
+Categoria
+----
+
+4.2.2. Categorias
+Os produtos são organizados por categorias para facilitar a busca. O administrador pode criar, editar e excluir categorias.
+----
+
+4.2.3. Usuários
+O administrador pode cadastrar novos usuários e definir suas permissões.
+----
+
+4.2.4. Clientes e Fornecedores
+O sistema permite o registro de clientes e fornecedores para facilitar a gestão de compras e vendas
+-----
+
+4.3. Controle de Estoque
+O atendente pode consultar o estoque e verificar a disponibilidade de produtos em tempo real.
+---
+
+4.4. Registro e Histórico de Vendas
+Cada venda é registrada no sistema, permitindo:
+Geração automática de recibos.
+Consulta de vendas anteriores.
+Relatórios de vendas filtrados por período.
+---
+
+5. Telas do Sistema
+5.1. Tela de Login
+Permite o acesso ao sistema mediante autenticação.
+----
+
+5.2. Menu do Administrador
+Inclui opções para:
+Cadastrar produtos
+Gerenciar categorias
+Gerenciar usuários
+Consultar estoque
+Acessar histórico de vendas
+---
+
+5.3. Menu do Atendente
+Inclui funções de:
+Registrar vendas
+Consultar estoque
+Emitir recibos
+---
+
+6. Tecnologias Utilizadas
+Linguagem: C#
+Framework: .NET
+Interface: Windows Forms
+Banco de Dados: LINQ to SQL
+---
+
+7. Como Executar o Projeto
+1. Abra o Visual Studio.
+2. Carregue o projeto (Garrafeira_1.csproj).
+3. Certifique-se de que a conexão com o banco de dados está correta.
+4. Compile e execute o programa.
